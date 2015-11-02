@@ -1,0 +1,61 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.modus</groupId>
+  <artifactId>com.modus.updatesite</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+  <properties>
+    <tycho.version>0.24.0</tycho.version>
+    <mars-repo.url>http://download.eclipse.org/releases/mars</mars-repo.url>
+  </properties>
+
+  <repositories>
+    <repository>
+      <id>mars</id>
+      <url>${mars-repo.url}</url>
+      <layout>p2</layout>
+    </repository>
+  </repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+					<groupId>org.eclipse.tycho.extras</groupId>
+					<artifactId>tycho-p2-extras-plugin</artifactId>
+					<version>${tycho.version}</version>
+					<executions>
+							<execution>
+									<id>copy-to-central-site</id>
+									<phase>install</phase>
+									<goals>
+											<goal>mirror</goal>
+									</goals>
+									<configuration>
+											<source>
+													<repository>
+															<url>../mule-connector-ftps-develop-branch-site/lastSuccessfulBuild/artifact/connector/target/UpdateSite.zip</url>
+															<layout>p2</layout>
+													</repository>
+                          <repository>
+															<url>../mule-connector-as2-develop-branch/lastSuccessfulBuild/artifact/connector/target/UpdateSite.zip</url>
+															<layout>p2</layout>
+													</repository>
+                          <repository>
+															<url>../mule-connector-b2b/lastSuccessfulBuild/artifact/target/UpdateSite.zip</url>
+															<layout>p2</layout>
+													</repository>
+											</source>
+									</configuration>
+							</execution>
+					</executions>
+			</plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho.version}</version>
+        <extensions>true</extensions>
+      </plugin>
+
+
+		</plugins>
+	</build>
+</project>
