@@ -32,15 +32,15 @@
 									<configuration>
 											<source>
 													<repository>
-															<url>../mule-connector-ftps-develop-branch-site/lastSuccessfulBuild/artifact/connector/target/UpdateSite.zip</url>
+															<url>/var/lib/jenkins/jobs/mule-connector-ftps-develop-branch-site/lastSuccessfulBuild/artifact/connector/target/UpdateSite.zip</url>
 															<layout>p2</layout>
 													</repository>
                           <repository>
-															<url>../mule-connector-as2-develop-branch/lastSuccessfulBuild/artifact/connector/target/UpdateSite.zip</url>
+															<url>/var/lib/jenkins/jobs/mule-connector-as2-develop-branch/lastSuccessfulBuild/artifact/connector/target/UpdateSite.zip</url>
 															<layout>p2</layout>
 													</repository>
                           <repository>
-															<url>../mule-connector-b2b/lastSuccessfulBuild/artifact/target/UpdateSite.zip</url>
+															<url>/var/lib/jenkins/jobs/mule-connector-b2b/lastSuccessfulBuild/artifact/target/UpdateSite.zip</url>
 															<layout>p2</layout>
 													</repository>
 											</source>
