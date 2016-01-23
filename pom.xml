@@ -36,16 +36,12 @@
 															<url>${ftps.update.site.url}</url>
 															<layout>p2</layout>
 													</repository>
-													<repository>
-															<url>${pm.update.site.url}</url>
-															<layout>p2</layout>
-													</repository>
                           <repository>
 															<url>${as2.update.site.url}</url>
 															<layout>p2</layout>
 													</repository>
                           <repository>
-															<url>${b2b.update.site.url}</url>
+															<url>${pm.update.site.url}</url>
 															<layout>p2</layout>
 													</repository>
 											</source>
