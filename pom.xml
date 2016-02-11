@@ -3,10 +3,13 @@
 	<groupId>com.modus</groupId>
   <artifactId>com.modus.updatesite</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-
+<!-- cute -- >
   <properties>
     <tycho.version>0.24.0</tycho.version>
     <mars-repo.url>http://download.eclipse.org/releases/mars</mars-repo.url>
+		<ftps.update.site.url>sites/ftps.zip</ftps.update.site.url>
+		<as2.update.site.url>sites/as2.zip</as2.update.site.url>
+		<pm.update.site.url>sites/pm.zip</pm.update.site.url>
   </properties>
 
   <repositories>
